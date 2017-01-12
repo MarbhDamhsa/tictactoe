@@ -2,7 +2,7 @@
 --Empty game board
 emptyBoard = ["...","...","..."]
 
---Check to see if a player has won
+--Assign each tile a letter and evaluate for win condition
 winner :: [[Char]] -> Char
 winner [[a,b,c],[d,e,f],[g,h,i]]
        | a == b && b == c && a /= '.'    = a
